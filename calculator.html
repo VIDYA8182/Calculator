@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CALCULATOR</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background-color: deepskyblue;
+            }
+            .app-title {
+                text-align: center;
+                color: blue;
+            }
+            .calculator-container {
+                background-color: black;
+                height: 550px;
+                width: 400px;
+                display: block;
+                margin: 10px auto;
+                border-radius: 20px;
+                border: 2px solid black;
+            }
+            .brand-name {
+                margin-right:40px;
+                text-align: right;
+                font-weight: bold;
+                font-size: 20px;
+                color: white;
+            }
+
+            .calculator-screen {
+                margin-top: 20px;
+                margin-left:auto;
+                margin-right: auto;
+                display: block;
+                width: 250px;
+                font-size: 40px;
+                border-radius: 7px;
+                border: 1px solid black;
+                background-color:gray;
+            }
+
+            .button-container{
+                justify-content: space-around;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                background-color:black;
+            }
+        
+            .btn{
+                font-size: 30px;
+                margin-top: 20px;
+                margin-left: 25px;
+                margin-right: 25px;
+                background-color: rgb(104, 91, 91);
+                border-radius: 7px;
+                height: 50px;
+                width:50px ;
+                color: white;
+                
+            }
+            .btn-special{
+                background-color: orange;
+            }
+
+            .btn-special1 {
+                background-color: lightgray;
+                color: black;
+
+            }
+            .btn:hover{
+              border-radius:20px ;
+              transition: 0.5s;  
+              cursor: pointer;
+              box-shadow: 0 0 10px white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="app-title">CALCULATOR</h1>
+        <div class="calculator-container"> 
+            <p class="brand-name">CASIO</p>
+            <input type="text" class="calculator-screen"/>
+            <div class="button-container">
+                <button class="btn btn-special1">AC</button>
+                <button class="btn btn-special1">%</button>
+                <button class="btn btn-special1">ce</button>
+                <button class="btn btn-special">/</button>
+
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn btn-special">*</button>
+
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class=" btn btn-special">-</button>
+
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn btn-special">+</button>
+
+                <button class="btn btn-special1">.</button>
+                <button class="btn">0</button>
+                <button class="btn btn-special1">^</button>
+                <button class="btn btn-special">=</button>
+                
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html
